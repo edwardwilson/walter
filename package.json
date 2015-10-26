@@ -1,0 +1,27 @@
+{
+  "name": "WalterBot",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "author": "Edward Wilson <edward.wilson@me.com>",
+  "description": "A simple helpful robot for dr foster",
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "dotenv": "^1.2.0",
+    "hubot": "^2.16.0",
+    "hubot-auth": "^1.2.0",
+    "hubot-google-translate": "^0.2.0",
+    "hubot-help": "^0.1.1",
+    "hubot-maps": "0.0.2",
+    "hubot-scripts": "^2.16.2",
+    "hubot-slack": "^3.4.1",
+    "lodash": "^3.10.1",
+    "mongodb": "^2.0.46"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "hubot --name walt --adapter slack"
+  }
+}
