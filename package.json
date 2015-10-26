@@ -22,6 +22,8 @@
     "node": "0.10.x"
   },
   "scripts": {
-    "start": "hubot --name walt --adapter slack"
+    "start": "hubot --name walt --adapter slack",
+    "install-windows-service": "winser -i -s -c",
+    "uninstall-windows-service": "winser -r -x -s"
   }
 }
