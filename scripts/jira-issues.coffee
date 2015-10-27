@@ -62,11 +62,8 @@ module.exports = (robot) ->
               try
                 json = JSON.parse(body)
                 key = json.key
-                
                 fields = []
                 
-                msg.send JSON.stringify json.fields.assignee
-                  
                 # Ticket assignee
                 assignee = "unassigned"
                 if json.fields.assignee
