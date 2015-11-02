@@ -15,8 +15,10 @@
     "hubot-maps": "0.0.2",
     "hubot-scripts": "^2.16.2",
     "hubot-slack": "^3.4.1",
+    "hubot-suggest": "0.0.1",
     "lodash": "^3.10.1",
-    "mongodb": "^2.0.46"
+    "mongodb": "^2.0.46",
+    "winser": "^1.0.0"
   },
   "engines": {
     "node": "0.10.x"
