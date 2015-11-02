@@ -5,7 +5,7 @@
 //   None
 //
 // Configuration:
-//   HUBOT_COMPANYVALUES
+//   None
 //
 // Commands:
 //   hubot what are the company values - responds with our company values
@@ -15,12 +15,16 @@
 
 (function () {
   'use strict';
-
-  var values = process.env.HUBOT_COMPANYVALUES;
-  
   module.exports = function (robot) {
     robot.respond(/(what are )?the (company )?values(\?)?$/i, function (msg) {
-      msg.send(values);
+      var payload = {
+        message: msg.message,
+        content: {
+          text: "Show we *care*\nWork better; *together*\n*Trust* each other to deliver\nMake the complex *simple*\nFind our *courage*",
+		  mrkdwn_in: ["text"]
+        }
+      };
+      robot.adapter.customMessage(payload);
     });
   };
 } ());
